@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+  font-family: "Monserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* themes */
+
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+}
+
+/* splash screen */
+
+.splash {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 1s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+  color: aliceblue;
+}
+
+.logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+
+/* header */
+
+.navbarr {
+  height: 70px;
+  width: 100%;
+  background: var(--gray2);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color:#040F0F;
+  
+}
+
+
+/* section one */
+header {
+  padding: 2rem;
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+  background: var(--gray2);
+  margin-bottom: 1rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+}
+header img {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+/* nav for content */
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  color: var(--gray4);
+ padding: 0 3rem;
+ margin-top: 80px;
+ 
+}
+
+.border {
+  border-bottom: 2px solid var(--gray4);
+  padding: 10px 1rem;
+
+}
+
+.navbar a {
+  font-size: 1.4rem;
+  padding: 0 20px;  
+  text-decoration: none;
+  color: #161616;
+  font-family: "Monserrat", sans-serif;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #9F9FA6;
+}
+
+#Menu1,
+#Menu2,
+#Menu3,
+#Menu4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 0 4.4rem;
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.recent {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+  gap: 4rem;
+} 
+/*#Menu1 img,
+#Menu2 img {
+  width: 37%;
+  height: 300px;
+}*/
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+/* images */
+
+#card-img {
+  background: url(/images/arsenal\ .webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img1 {
+  background: url(/images/newcastle.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+
+}
+#card-img2 {
+  background: url(/images/chelsea\ downfall.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img3 {
+  background: url(/images/fulham\ winning.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img4 {
+  background: url(/images/gabi\ martinelli.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img5 {
+  background: url(/images/haaland.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img6 {
+  background: url(/images/ronaldo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img7 {
+  background: url(/images/dawin\ nunez.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img8 {
+  background: url(/images/Gakpo-Liverpool.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img9 {
+  background: url(/images/Messi.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img10 {
+  background: url(/images/ten-hag.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img11 {
+  background: url(/images/pele.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img12 {
+  background: url(/images/benz.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img13 {
+  background: url(/images/felix.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img14 {
+  background: url(/images/Napoli_GFX.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+#card-img15 {
+  background: url(/images/juve.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; 
+}
+
+
+.smalltitle {
+  background: rgba(0, 0, 0, 0.6);
+  height: 80px;
+  color: #ffffff;
+  padding: 20px 20px;
+  margin-top: -80px;
+}
+.text {
+  margin-top: 40px;
+}
+.linkk {
+  text-decoration: none;
+  color: #161616;
+  font-weight: bold;
+  padding-top: 10px;
+}
